@@ -17,9 +17,9 @@ export class AppComponent implements OnInit{
 
     ngOnInit(): void {
       // Make the HTTP request:
-      this.http.get('https://3000-f0be7447-5102-4614-9155-7f765075c1a7.ws-eu01.gitpod.io/api').subscribe(data => {
+      this.http.get('https://3000-f0be7447-5102-4614-9155-7f765075c1a7.ws-eu01.gitpod.io/api').subscribe(a => {
         // Read the result field from the JSON response.
-        this.results = data['results'];
+        this.results = a['results'];
       });
     }
 }
